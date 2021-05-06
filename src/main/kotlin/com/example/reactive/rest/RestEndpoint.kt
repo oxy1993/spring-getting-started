@@ -2,7 +2,6 @@ package com.example.reactive.rest
 
 import com.example.reactive.dataprovider.DataProvider
 import com.example.reactive.model.Car
-import io.reactivex.Observable
 import io.swagger.annotations.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
