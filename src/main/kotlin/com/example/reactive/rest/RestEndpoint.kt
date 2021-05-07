@@ -40,7 +40,9 @@ class RestEndpoint {
     @ResponseBody
     @CrossOrigin(origins = ["http://localhost:8084"])
     fun getCarsAsJson(): List<Car> {
-        return dataProvider.getDataStream().toList().blockingGet()
+        val blockingGet = dataProvider.getDataStream().toList().blockingGet()
+        println(blockingGet)
+        return blockingGet
     }
 
 }
